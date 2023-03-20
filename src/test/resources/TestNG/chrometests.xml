@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="WebSuite">
+
+    <test name="template for web platform">
+        <parameter name="platform" value="Web"/>
+        <parameter name="browser" value="Chrome"/>
+        <parameter name="resolution" value="2560x1440"/>
+        <classes>
+            <class name="org.example.tests.ChromeTests">
+                <methods>
+                    <include name="fillTextboxAndPasswordTest"/>
+                    <include name="dropdownsTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>
